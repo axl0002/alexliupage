@@ -7,7 +7,9 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 :root {
-    --black-primary:#313131;
+    --black-primary:#1c1c1c;
+    --black-secondary:#232323;
+    --black-tertiary:#0f0f0f;
     --white-primary:#dcdcdc;
 }
 
@@ -103,7 +105,7 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #2e3141;
+		background-color: var(--black-tertiary);
 		background-image: url("../../images/bg.jpg");
 		background-size: auto,
  cover;
@@ -3009,7 +3011,7 @@ input, select, textarea {
 
 		.features article {
 			padding: 1.75em 1.75em 0.1em 1.75em ;
-			background-color: #353849;
+			background-color: var(--black-secondary);
 			border-radius: 5px;
 			margin: 1.5em 3em 1.5em 0;
 			width: calc(50% - 1.5em);
@@ -3080,7 +3082,7 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out;
-		background-color: rgba(53, 56, 73, 0.95);
+		background-color: var(--black-tertiary);
 		height: 3.5em;
 		left: 0;
 		line-height: 3.5em;
@@ -3771,7 +3773,7 @@ input, select, textarea {
 			}
 
 		.wrapper.spotlight {
-			background-color: var(--white-primary);
+			background-color: var(--black-secondary);
 		}
 
 			/* .wrapper.spotlight:before, .wrapper.spotlight:after {
