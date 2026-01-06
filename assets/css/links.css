@@ -1,0 +1,140 @@
+/* Links Page Specific Styles */
+
+/* Ensure the background matches the main theme (inherited from body) */
+body.links-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    padding: 2em 1em;
+    /* Force override of main.css */
+    background-color: #1c1c1c !important;
+    background-image: linear-gradient(180deg, #232323 50%, #1c1c1c 100%) !important;
+    background-attachment: fixed;
+}
+
+/* Profile Section */
+.profile-section {
+    text-align: center;
+    margin-bottom: 2em;
+    width: 100%;
+    max-width: 480px;
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.25em;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.handle {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+}
+
+/* Links Container */
+.links-container {
+    width: 100%;
+    max-width: 680px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+/* Link Buttons */
+.link-button {
+    /* Use flexbox for better alignment and to prevent overlap */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    width: 100%;
+    padding: 1em 1.5em;
+    /* Increased horizontal padding */
+    text-align: center;
+
+    background: #ffffff;
+    color: #1c1c1c !important;
+    border-radius: 50px;
+    /* More rounded like Linktree */
+    text-decoration: none;
+    font-weight: 600;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.link-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    background: #fafafa;
+    color: #000000 !important;
+}
+
+/* Icon positioning */
+.link-button .icon {
+    position: absolute;
+    left: 1.5rem;
+    font-size: 1.3em;
+    /* Ensure icon doesn't shift vertically */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.link-button span:not(.icon) {
+    /* Let the text flow naturally, but ensure it has space if icon exists */
+    display: block;
+    max-width: 100%;
+}
+
+.section-header {
+    width: 100%;
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 1.5em 0 0.5em 0;
+    position: relative;
+    z-index: 1;
+}
+
+.section-header:first-of-type {
+    margin-top: 0;
+}
+
+/* Footer in Links Page */
+#footer {
+    background: transparent;
+    padding: 2em 0;
+    margin-top: auto;
+}
+
+#footer .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.join-linktree {
+    margin-top: 2em;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    padding: 0.8em 1.5em;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-decoration: none;
+    border-bottom: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
